@@ -19,7 +19,7 @@ public class SumOfDigits {
 			}
 			System.out.println(sum);
 			sum=0;
-	}
+	        }
 	}
 }
 
