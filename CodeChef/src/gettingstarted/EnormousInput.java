@@ -1,59 +1,22 @@
 package gettingstarted;
-import java.io.OutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
-import java.util.StringTokenizer;
-import java.io.IOException;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.InputStream;
+import java.util.*;
 public class EnormousInput {
 	
 	public static void main(String[] args) {
-		// System.in and System.out are input and output streams, respectively.
-		InputStream inputStream = System.in;
-
-		InputReader in = new InputReader(inputStream);
-
-		int n = in.nextInt();
-		int k = in.nextInt();
 		
-		int ans = 0;
-		
-		for (int i = 0; i < n; i++) {
-			int x = in.nextInt();
-			
-			if (x % k == 0) {
-				ans++;
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int k=sc.nextInt();
+		int r=0;
+		for(int i=0; i< n; i++)
+		{
+			int t=sc.nextInt();
+			if(t%k==0)
+			{
+				r++;
 			}
 		}
-
-		System.out.println(ans);
-	}
-
-	static class InputReader {
-		public BufferedReader reader;
-		public StringTokenizer tokenizer;
-
-		public InputReader(InputStream stream) {
-			reader = new BufferedReader(new InputStreamReader(stream), 32768);
-			tokenizer = null;
-		}
-
-		public String next() {
-			while (tokenizer == null || !tokenizer.hasMoreTokens()) {
-				try {
-				    tokenizer = new StringTokenizer(reader.readLine());
-				} catch (IOException e) {
-				    throw new RuntimeException(e);
-				}
-			}
-			return tokenizer.nextToken();
-		}
-
-		public int nextInt() {
-			return Integer.parseInt(next());
-		}
+		System.out.println(r);
+		sc.close();
 	}
 }
