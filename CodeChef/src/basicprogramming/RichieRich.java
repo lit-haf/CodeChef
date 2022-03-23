@@ -1,4 +1,4 @@
-package BasicProgramming;
+package basicprogramming;
 import java.util.*;
 public class RichieRich {
 

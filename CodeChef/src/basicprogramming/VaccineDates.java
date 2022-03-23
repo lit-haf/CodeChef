@@ -1,4 +1,4 @@
-package BasicProgramming;
+package basicprogramming;
 import java.util.*;
 public class VaccineDates {
 	public static void main(String[] args) {	
