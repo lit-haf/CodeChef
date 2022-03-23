@@ -1,7 +1,7 @@
 package basicprogramming;
 import java.util.*;
 
-public class TwoDishes {
+public class TheTwoDishes {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
